@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neon Portfolio | Futuristic Web Experience</title>
+  <meta name="description" content="A modern, futuristic portfolio website with neon blue and purple lighting." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated background grid -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">NEON<span>.dev</span></div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="section hero">
+    <div class="hero-content reveal">
+      <p class="eyebrow">WELCOME TO THE FUTURE</p>
+      <h1>Hi, I'm <span class="gradient-text">Alex Carter</span></h1>
+      <p class="subtitle">
+        A passionate developer crafting immersive, high-performance digital experiences
+        with neon aesthetics and clean code.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="orb orb-blue"></div>
+      <div class="orb orb-purple"></div>
+      <div class="ring"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">About <span class="gradient-text">Me</span></h2>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <p>
+            I'm a developer focused on building modern, responsive, and
+            visually stunning applications. I blend design with engineering to
+            deliver products that feel premium and performant.
+          </p>
+          <p>
+            Currently exploring AI agents, web animations, and scalable front-end
+            architecture. Always learning, always shipping.
+          </p>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stat"><span class="stat-num">5+</span><span>Years Experience</span></div>
+          <div class="stat"><span class="stat-num">40+</span><span>Projects Shipped</span></div>
+          <div class="stat"><span class="stat-num">100%</span><span>Client Satisfaction</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-thumb thumb-1"></div>
+          <h3>Neon Dashboard</h3>
+          <p>A real-time analytics dashboard with glassmorphism UI and live charts.</p>
+          <div class="tags"><span>React</span><span>Node</span><span>Charts</span></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-thumb thumb-2"></div>
+          <h3>AI Chat Agent</h3>
+          <p>A tool-using AI agent with memory and multi-step reasoning.</p>
+          <div class="tags"><span>Python</span><span>LLM</span><span>Agents</span></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-thumb thumb-3"></div>
+          <h3>Cyber Commerce</h3>
+          <p>Futuristic e-commerce experience with 3D product previews.</p>
+          <div class="tags"><span>Next.js</span><span>Three.js</span><span>Stripe</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">My <span class="gradient-text">Skills</span></h2>
+      <div class="skills-grid reveal">
+        <div class="skill">HTML5 / CSS3</div>
+        <div class="skill">JavaScript (ES6+)</div>
+        <div class="skill">React & Next.js</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Python</div>
+        <div class="skill">UI/UX Design</div>
+        <div class="skill">Agentic AI</div>
+        <div class="skill">Git & DevOps</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Let's <span class="gradient-text">Connect</span></h2>
+      <form class="contact-form reveal" id="contactForm">
+        <div class="input-group">
+          <input type="text" id="name" required placeholder=" " />
+          <label for="name">Your Name</label>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" required placeholder=" " />
+          <label for="email">Your Email</label>
+        </div>
+        <div class="input-group">
+          <textarea id="message" rows="5" required placeholder=" "></textarea>
+          <label for="message">Your Message</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Neon.Dev — Crafted with 💙 & 💜</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
